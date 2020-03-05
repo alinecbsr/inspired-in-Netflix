@@ -1,27 +1,27 @@
 .navbar {
-  display:flex;
-  background-color: #000; 
+  display: flex;
+  background-color: #000;
   position: fixed;
   width: 100%;
 
   &.black {
-  background-color: #999;
+    background-color: #999;
   }
 
   &__list {
-    display:flex;
+    display: flex;
     align-items: center;
     background-color: transparent;
     margin-left: 3.8rem;
     height: 6.7rem;
-    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    
-      @include responsive(phone) {
-        margin-left: 1rem;
-      }
-    
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    @include responsive(phone) {
+      margin-left: 1rem;
+    }
+
     a:first-child {
-      padding-left: .2%;
+      padding-left: 0.2%;
       color: red;
       font-size: 4rem;
     }
@@ -32,7 +32,7 @@
       fill: red;
       width: 2.2rem;
       padding-right: 2.5rem;
-      
+
       @include responsive(phone) {
         display: none;
       }
@@ -44,46 +44,45 @@
       fill: red;
       width: 2.2rem;
       padding-right: 2.5rem;
-      
+
       @include responsive(phone) {
         display: none;
       }
     }
 
-    &--logo { 
+    &--logo {
       margin-top: 1rem;
       height: 5rem;
       padding-right: 1rem;
 
       @include responsive(tab_port) {
-         padding-right: .1rem;
+        padding-right: 0.1rem;
       }
     }
-    
+
     &-link {
       font-weight: 500;
       font-size: 1.5rem;
       color: #fff;
       text-decoration: none;
       margin-right: 2rem;
-      transition: all .2s; 
+      transition: all 0.2s;
 
-        &:last-child {
-          padding-right: 2.6rem;
-        }
+      &:last-child {
+        padding-right: 2.6rem;
+      }
 
-        &:hover {
-          color: rgb(167, 167, 167); 
-        }
+      &:hover {
+        color: rgb(167, 167, 167);
+      }
     }
-    
+
     &--left {
       display: flex;
       justify-content: flex-end;
       align-items: center;
       flex-grow: 1;
       padding-right: 2rem;
-      
 
       &__input {
         font-size: 1.4rem;
@@ -95,7 +94,7 @@
         padding-right: 2rem;
         background: #000;
         border: 1px solid #fff;
-        transition: width .5s;
+        transition: width 0.5s;
         cursor: pointer;
         opacity: 0;
 
@@ -121,7 +120,6 @@
 .pseudo-link {
   cursor: pointer;
   @include responsive(tab_port) {
-  display: none;
+    display: none;
   }
-  
 }
