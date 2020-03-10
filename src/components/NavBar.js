@@ -5,7 +5,7 @@ import Research from "../assets/images/research.svg";
 import Gift from "../assets/images/gift.svg";
 import Bell from "../assets/images/belll.svg";
 
-class navigation extends Component {
+class NavBar extends Component {
   state = {
     scrolling: false
   };
@@ -66,4 +66,4 @@ class navigation extends Component {
   }
 }
 
-export default navigation;
+export default NavBar;
