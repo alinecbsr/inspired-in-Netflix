@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import NavbarItem from "../components/NavbarItem";
-import NetflixLogo from "../assets/images/Netflix_Logo_RGB.png";
+import NetflixLogo from "../assets/images/NetflixLogoRGB.png";
 import Research from "../assets/images/research.svg";
 import Gift from "../assets/images/gift.svg";
 import Bell from "../assets/images/belll.svg";
