@@ -21,7 +21,7 @@ class NavBar extends Component {
   handleScroll = event => {
     if (window.scrollY === 0) {
       this.setState({ scrolling: false });
-    } else if (window.scrollY > 50) {
+    } else if (window.scrollY > 20) {
       this.setState({ scrolling: true });
     }
   };

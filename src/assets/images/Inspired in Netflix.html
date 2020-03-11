@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><canvas width="1600" height="860" style="bottom: 0px; left: 0px; pointer-events: none; position: fixed; right: 0px; top: 0px; z-index: 1000000000;"></canvas><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./Inspired in Netflix_files/css" rel="stylesheet">
+    <title>Inspired in Netflix</title>
+  <style type="text/css">/* GLOBAL RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote,
+q {
+  quotes: none; }
+  blockquote:before, blockquote:after,
+  q:before,
+  q:after {
+    content: "";
+    content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 74em) {
+    html {
+      font-size: 50%; } }
+
+.container {
+  display: grid;
+  grid-template-rows: min-content min-content min-content min-content;
+  grid-template-columns: 4% repeat(5, 1fr) 4%; }
+
+.navbar {
+  display: flex;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  transition-timing-function: ease-in;
+  transition: all 1s; }
+  .navbar.black {
+    background-color: #000; }
+  .navbar__list {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    margin-left: 3.8rem;
+    height: 6.7rem;
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    @media only screen and (max-width: 37.5em) {
+      .navbar__list {
+        margin-left: 1rem; } }
+    .navbar__list a:first-child {
+      padding-left: 0.2%;
+      color: red;
+      font-size: 4rem; }
+    .navbar__list--gift {
+      cursor: pointer;
+      height: 2.2rem;
+      fill: red;
+      width: 2.2rem;
+      padding-right: 2.5rem; }
+      @media only screen and (max-width: 37.5em) {
+        .navbar__list--gift {
+          display: none; } }
+    .navbar__list--bell {
+      cursor: pointer;
+      height: 2.2rem;
+      fill: red;
+      width: 2.2rem;
+      padding-right: 2.5rem; }
+      @media only screen and (max-width: 37.5em) {
+        .navbar__list--bell {
+          display: none; } }
+    .navbar__list--logo {
+      margin-top: 1rem;
+      height: 5rem;
+      padding-right: 1rem; }
+      @media only screen and (max-width: 74em) {
+        .navbar__list--logo {
+          padding-right: 0.1rem; } }
+    .navbar__list-link {
+      font-weight: 500;
+      font-size: 1.5rem;
+      color: #fff;
+      text-decoration: none;
+      margin-right: 2rem;
+      transition: all 0.2s; }
+      .navbar__list-link:last-child {
+        padding-right: 2.6rem; }
+      .navbar__list-link:hover {
+        color: #a7a7a7; }
+    .navbar__list--left {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-grow: 1;
+      padding-right: 2rem; }
+      .navbar__list--left__input {
+        font-size: 1.4rem;
+        border: none;
+        color: #fff;
+        outline: none;
+        width: 0px;
+        padding: 10px;
+        padding-right: 2rem;
+        background: #000;
+        border: 1px solid #fff;
+        transition: width 0.5s;
+        cursor: pointer;
+        opacity: 0; }
+        .navbar__list--left__input:focus {
+          padding-left: 4rem;
+          width: 22rem;
+          cursor: text;
+          opacity: 1; }
+
+.research {
+  width: 1.8rem;
+  height: 1.8rem;
+  transform: translateX(2.4rem) translateY(1rem);
+  cursor: pointer;
+  margin: 0 0 2rem 0; }
+
+.pseudo-link {
+  cursor: pointer; }
+  @media only screen and (max-width: 74em) {
+    .pseudo-link {
+      display: none; } }
+
+.header {
+  background-color: #000;
+  grid-column: 1 / 13;
+  height: 65rem;
+  display: inline-block;
+  background-image: url(/static/media/movie.8ff958ae.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      height: 50rem; } }
+  .header__container {
+    padding-top: 27rem;
+    padding-left: 8rem;
+    color: #fff; }
+    @media only screen and (max-width: 37.5em) {
+      .header__container {
+        padding-left: 1rem; } }
+    .header__container-heading {
+      font-size: 6rem;
+      padding-bottom: 1rem; }
+    .header__container-btnPlay, .header__container-btnMyList {
+      cursor: pointer;
+      font-size: 1.6rem;
+      color: #fff;
+      outline: none;
+      border: none;
+      font-weight: 700;
+      border-radius: 0.2vw;
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+      margin-right: 1rem;
+      padding-top: 1rem;
+      background-color: rgba(51, 51, 51, 0.5);
+      padding-bottom: 1rem; }
+      .header__container-btnPlay-add, .header__container-btnMyList-add {
+        width: 15px;
+        height: 15px;
+        fill: #fff;
+        margin-right: 1rem; }
+      .header__container-btnPlay-play, .header__container-btnMyList-play {
+        width: 15px;
+        height: 15px;
+        fill: #fff;
+        margin-right: 1rem; }
+      .header__container-btnPlay:hover, .header__container-btnMyList:hover {
+        color: #000;
+        background-color: #e6e6e6;
+        transition: all 0.2s;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+        .header__container-btnPlay:hover > *, .header__container-btnMyList:hover > * {
+          fill: #000; }
+    .header__container-overview {
+      width: 45rem;
+      line-height: 1.3;
+      padding-top: 2.5rem;
+      font-size: 1.8rem; }
+      @media only screen and (max-width: 37.5em) {
+        .header__container-overview {
+          width: 36rem; } }
+  .header--fadeBottom {
+    height: 28.5rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111111); }
+
+.movieList {
+  background-color: #000;
+  grid-column: 2 / 13;
+  color: #fff; }
+  .movieList__heading {
+    padding-top: 2rem;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: "Hind", sans-serif; }
+  .movieList__container::-webkit-scrollbar {
+    display: none; }
+  .movieList__container {
+    transition: transform 450ms;
+    overflow: -moz-hidden-unscrollable;
+    overflow-x: scroll;
+    display: flex;
+    width: 95vw;
+    overflow: -moz-scrollbars-horizontal;
+    grid-template-columns: repeat(20, 1fr);
+    grid-column-gap: 0;
+    column-gap: 0; }
+    @media only screen and (max-width: 37.5em) {
+      .movieList__container {
+        width: 98vw; } }
+    .movieList__container:hover .movieList__container--movie {
+      opacity: 0.3; }
+      .movieList__container:hover .movieList__container--movie:hover {
+        transform: scale(1.5);
+        opacity: 1; }
+    .movieList__container:hover > * {
+      transform: translate3d(-6rem, 0, 0); }
+      @media only screen and (max-width: 74em) {
+        .movieList__container:hover > * {
+          transform: translate3d(-5rem, 0, 0); } }
+      @media only screen and (max-width: 37.5em) {
+        .movieList__container:hover > * {
+          transform: translate3d(-3rem, 0, 0); } }
+    .movieList__container--movie-image:hover ~ .movieList__container--movie-image {
+      transform: translate3d(6rem, 0, 0); }
+      @media only screen and (max-width: 74em) {
+        .movieList__container--movie-image:hover ~ .movieList__container--movie-image {
+          transform: translate3d(4.5rem, 0, 0); } }
+      @media only screen and (max-width: 37.5em) {
+        .movieList__container--movie-image:hover ~ .movieList__container--movie-image {
+          transform: translate3d(2.8rem, 0, 0); } }
+    .movieList__container:hover > .movieList__container--movie-image {
+      transform: translate3d(-1rem, 0, 0); }
+    .movieList__container--movie-image:hover ~ .movieList__container--movie-image {
+      transform: translate3d(1rem, 0, 0); }
+    .movieList__container:hover .movieList__container--movie-image {
+      opacity: 0.3; }
+      .movieList__container:hover .movieList__container--movie-image:hover {
+        transform: scale(1.1);
+        opacity: 1; }
+    .movieList__container--movie-image {
+      cursor: pointer;
+      transition: all 450ms;
+      transform: center left;
+      padding-top: 3.5rem;
+      padding-bottom: 4rem;
+      height: 21.5rem;
+      min-height: 0; }
+      @media only screen and (max-width: 74em) {
+        .movieList__container--movie-image {
+          height: 18.5rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .movieList__container--movie-image {
+          height: 14rem; } }
+      .movieList__container--movie-image:not(:last-child) {
+        padding-right: 0.5rem; }
+      .movieList__container--movie-image-image {
+        height: 100%;
+        margin: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        padding-right: 1rem;
+        transition: all 450ms;
+        min-height: 0;
+        height: 52rem;
+        cursor: pointer;
+        transition: all 450ms;
+        transform: center left; }
+      .movieList__container--movie-image__netflix {
+        min-height: 0;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        padding-right: 1rem;
+        height: 52rem;
+        cursor: pointer;
+        transition: all 450ms;
+        transform: center left;
+        transition: transform 450ms;
+        overflow: -moz-hidden-unscrollable;
+        overflow-x: scroll;
+        display: flex;
+        width: 95vw;
+        overflow: -moz-scrollbars-horizontal;
+        grid-template-columns: repeat(20, 1fr);
+        grid-column-gap: 0;
+        column-gap: 0; }
+        @media only screen and (max-width: 74em) {
+          .movieList__container--movie-image__netflix {
+            height: 42rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .movieList__container--movie-image__netflix {
+            height: 34rem; } }
+</style></head>
+  <body cz-shortcut-listen="true">
+    <div id="app"><nav class="navbarblack"><ul class="navbar__list"><a aria-current="page" class="navbar__list--link active" href="http://localhost:3000/"><img class="navbar__list--logo" src="./Inspired in Netflix_files/NetflixLogoRGB.8562b656.png" alt="NetflixLogo"></a><div class="navbar__list-link pseudo-link">Home</div><div class="navbar__list-link pseudo-link">TV Shows</div><div class="navbar__list-link pseudo-link">Movies</div><div class="navbar__list-link pseudo-link">Recently Added</div><div class="navbar__list-link pseudo-link">My List</div></ul><div class="navbar__list--left"><img src="./Inspired in Netflix_files/research.19835778.svg" class="research" alt="research"><input class="navbar__list--left__input" type="text" placeholder="Title, genres, people"><ul class="navbar__list"><div class="navbar__list-link pseudo-link">KIDS</div><div class="navbar__list-link pseudo-link">DVD</div></ul><img class="navbar__list--gift" src="./Inspired in Netflix_files/gift.168e585f.svg" alt="Gift"><img class="navbar__list--bell" src="./Inspired in Netflix_files/belll.934ba087.svg" alt="Bell"></div></nav><div class="container"><header class="header"><div class="header__container"><h1 class="header__container-heading">Título</h1><button class="header__container-btnPlay"><img src="./Inspired in Netflix_files/playButton.c65f6a86.svg" class="header__container-btnMyList-play" alt="Play">Play</button><button class="header__container-btnMyList"><img src="./Inspired in Netflix_files/add.b1e00d66.svg" class="header__container-btnMyList-add" alt="Add">My List</button><p class="header__container-overview">Overview Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis posuere urna, id consequat ante. Cras venenatis erat sem, a tempus neque fermentum mattis.</p></div><div class="header--fadeBottom"></div></header><div class="movieList"><div>Hello world</div></div></div></div>
+  <script src="./Inspired in Netflix_files/bundle.js.download"></script><script src="./Inspired in Netflix_files/1.chunk.js.download"></script><script src="./Inspired in Netflix_files/main.chunk.js.download"></script><script src="./Inspired in Netflix_files/main.994faaee86ef1e6827a0.hot-update.js.download"></script>
+
+<object id="__symantecPKIClientMessenger" data-supports-flavor-configuration="true" data-extension-version="0.5.0.109" style="display: none;"></object><span id="__symantecPKIClientDetector" style="display: none;">__PRESENT</span><div id="SL_balloon_obj" alt="0" style="display: block;"><div id="SL_button" class="SL_ImTranslatorLogo" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/imtranslator-s.png&quot;); display: none;"></div><div id="SL_shadow_translation_result2" style="display: none;"></div><div id="SL_shadow_translator" style="left: -10000px; top: -10000px; display: none;"><div id="SL_planshet"><div id="SL_arrow_up" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/up.png&quot;);"></div><div id="SL_Bproviders"></div><div id="SL_alert_bbl" style="display: none;"><div id="SLHKclose" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/delete.png&quot;);"></div><div id="SL_alert_cont"></div></div><div id="SL_TB"><table id="SL_tables" cellspacing="1"><tr><td class="SL_td" width="10%" align="right"><input id="SL_locer" type="checkbox" title="Bloquear idioma"></td><td class="SL_td" width="20%" align="left"><select id="SL_lng_from" class="SL_lngs"><option value="auto">Detectar idioma</option><option value="af">Africâner</option><option value="sq">Albanês</option><option value="de">Alemão</option><option value="am">Amárico</option><option value="ar">Arabe</option><option value="hy">Armênio</option><option value="az">Azerbaijano</option><option value="eu">Basco</option><option value="bn">Bengali</option><option value="be">Bielo-russo</option><option value="my">Birmanês</option><option value="bs">Bósnio</option><option value="bg">Búlgaro</option><option value="kn">Canarês</option><option value="ca">Catalão</option><option value="kk">Cazaque</option><option value="ceb">Cebuano</option><option value="ny">Chicheua</option><option value="zh-CN">Chinês simp</option><option value="zh-TW">Chinês trad</option><option value="sn">Chona</option><option value="si">Cingalês</option><option value="ko">Coreano</option><option value="co">Corso</option><option value="ht">Crioulo haitiano</option><option value="hr">Croata</option><option value="ku">Curdo</option><option value="da">Dinamarquês</option><option value="sk">Eslovaco</option><option value="sl">Esloveno</option><option value="es">Espanhol</option><option value="eo">Esperanto</option><option value="et">Estoniano</option><option value="tl">Filipino</option><option value="fi">Finlandês</option><option value="fr">Francês</option><option value="fy">Frísio</option><option value="gd">Gaélico escocês</option><option value="gl">Galego</option><option value="cy">Galês</option><option value="ka">Georgiano</option><option value="el">Grego</option><option value="gu">Guzerate</option><option value="ha">Hauça</option><option value="haw">Havaiano</option><option value="iw">Hebraico</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="nl">Holandês</option><option value="hu">Húngaro</option><option value="ig">Igbo</option><option value="yi">Iídiche</option><option value="id">Indonésio</option><option value="en">Inglês</option><option value="yo">Ioruba</option><option value="ga">Irlandês</option><option value="is">Islandês</option><option value="it">Italiano</option><option value="ja">Japonês</option><option value="jw">Javanês</option><option value="km">Khmer</option><option value="lo">Laosiano</option><option value="la">Latim</option><option value="lv">Letão</option><option value="lt">Lituano</option><option value="lb">Luxemburguês</option><option value="mk">Macedônico</option><option value="ml">Malaiala</option><option value="ms">Malaio</option><option value="mg">Malgaxe</option><option value="mt">Maltês</option><option value="mi">Maori</option><option value="mr">Marata</option><option value="mn">Mongol</option><option value="ne">Nepalês</option><option value="no">Norueguês</option><option value="ps">Pachto</option><option value="fa">Persa</option><option value="pl">Polonês</option><option value="pt">Português</option><option value="pa">Punjabi</option><option value="ky">Quirguiz</option><option value="ro">Romeno</option><option value="ru">Russo</option><option value="sm">Samoano</option><option value="sr">Sérvio</option><option value="st">Sessoto</option><option value="sd">Sindi</option><option value="so">Somali</option><option value="sw">Suaíle</option><option value="sv">Sueco</option><option value="su">Sundanês</option><option value="tg">Tadjique</option><option value="th">Tailandês</option><option value="ta">Tâmil</option><option value="cs">Tcheco</option><option value="te">Telugo</option><option value="tr">Turco</option><option value="uk">Ucraniano</option><option value="ur">Urdu</option><option value="uz">Uzbeque</option><option value="vi">Vietnamita</option><option value="xh">Xhosa</option><option value="zu">Zulu</option></select></td><td class="SL_td" width="3" align="center"><div id="SL_switch_b" title="Alternar Idiomas" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/switchb.png&quot;);"></div></td><td class="SL_td" width="20%" align="left"><select id="SL_lng_to" class="SL_lngs"><option value="af">Africâner</option><option value="sq">Albanês</option><option value="de">Alemão</option><option value="am">Amárico</option><option value="ar">Arabe</option><option value="hy">Armênio</option><option value="az">Azerbaijano</option><option value="eu">Basco</option><option value="bn">Bengali</option><option value="be">Bielo-russo</option><option value="my">Birmanês</option><option value="bs">Bósnio</option><option value="bg">Búlgaro</option><option value="kn">Canarês</option><option value="ca">Catalão</option><option value="kk">Cazaque</option><option value="ceb">Cebuano</option><option value="ny">Chicheua</option><option value="zh-CN">Chinês simp</option><option value="zh-TW">Chinês trad</option><option value="sn">Chona</option><option value="si">Cingalês</option><option value="ko">Coreano</option><option value="co">Corso</option><option value="ht">Crioulo haitiano</option><option value="hr">Croata</option><option value="ku">Curdo</option><option value="da">Dinamarquês</option><option value="sk">Eslovaco</option><option value="sl">Esloveno</option><option value="es">Espanhol</option><option value="eo">Esperanto</option><option value="et">Estoniano</option><option value="tl">Filipino</option><option value="fi">Finlandês</option><option value="fr">Francês</option><option value="fy">Frísio</option><option value="gd">Gaélico escocês</option><option value="gl">Galego</option><option value="cy">Galês</option><option value="ka">Georgiano</option><option value="el">Grego</option><option value="gu">Guzerate</option><option value="ha">Hauça</option><option value="haw">Havaiano</option><option value="iw">Hebraico</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="nl">Holandês</option><option value="hu">Húngaro</option><option value="ig">Igbo</option><option value="yi">Iídiche</option><option value="id">Indonésio</option><option value="en">Inglês</option><option value="yo">Ioruba</option><option value="ga">Irlandês</option><option value="is">Islandês</option><option value="it">Italiano</option><option value="ja">Japonês</option><option value="jw">Javanês</option><option value="km">Khmer</option><option value="lo">Laosiano</option><option value="la">Latim</option><option value="lv">Letão</option><option value="lt">Lituano</option><option value="lb">Luxemburguês</option><option value="mk">Macedônico</option><option value="ml">Malaiala</option><option value="ms">Malaio</option><option value="mg">Malgaxe</option><option value="mt">Maltês</option><option value="mi">Maori</option><option value="mr">Marata</option><option value="mn">Mongol</option><option value="ne">Nepalês</option><option value="no">Norueguês</option><option value="ps">Pachto</option><option value="fa">Persa</option><option value="pl">Polonês</option><option selected="selected" value="pt">Português</option><option value="pa">Punjabi</option><option value="ky">Quirguiz</option><option value="ro">Romeno</option><option value="ru">Russo</option><option value="sm">Samoano</option><option value="sr">Sérvio</option><option value="st">Sessoto</option><option value="sd">Sindi</option><option value="so">Somali</option><option value="sw">Suaíle</option><option value="sv">Sueco</option><option value="su">Sundanês</option><option value="tg">Tadjique</option><option value="th">Tailandês</option><option value="ta">Tâmil</option><option value="cs">Tcheco</option><option value="te">Telugo</option><option value="tr">Turco</option><option value="uk">Ucraniano</option><option value="ur">Urdu</option><option value="uz">Uzbeque</option><option value="vi">Vietnamita</option><option value="xh">Xhosa</option><option value="zu">Zulu</option></select></td><td class="SL_td" width="5%" align="center"> </td><td class="SL_td" width="8%" align="center"><div id="SL_TTS_voice" title="undefined" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/ttsvoice.png&quot;);"></div></td><td class="SL_td" width="8%" align="center"><div id="SL_copy" title="Copiar" class="SL_copy" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/copy.png&quot;);"><div id="SL_copy_tip"></div></div></td><td class="SL_td" width="8%" align="center"><div id="SL_bbl_font_patch"></div><div id="SL_bbl_font" title="Tamanho da fonte" class="SL_bbl_font" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/font.png&quot;);"></div></td><td class="SL_td" width="8%" align="center"><div id="SL_bbl_help" title="Ajuda" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/bhelp.png&quot;);"></div></td><td class="SL_td" width="15%" align="right"><div id="SL_pin" class="SL_pin_off" title="Fixar a janela de pop-up" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/pin-on.png&quot;);"></div></td></tr></table></div></div><div id="SL_shadow_translation_result" style="visibility: visible;"></div><div id="SL_loading" class="SL_loading" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/loading.gif&quot;);"></div><div id="SL_player2" style="display: none;"></div><div id="SL_alert100" style="display: none;">A função de fala é limitada a 200 caracteres</div><div id="SL_Balloon_options" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/bg3.png&quot;) rgb(255, 255, 255);"><div id="SL_arrow_down" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/down.png&quot;);"></div><table id="SL_tbl_opt" width="100%"><tr><td class="SL_td" width="5%" align="center"><input id="SL_BBL_locer" type="checkbox" checked="1" title="Mostrar o botão do ImTranslator 3 segundos"></td><td class="SL_td" width="5%" align="left"><div id="SL_BBL_IMG" title="Mostrar o botão do ImTranslator 3 segundos" style="background: url(&quot;chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/img/util/bbl-logo.png&quot;);"></div></td><td class="SL_td" width="70%" align="center"><a href="chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/html/options/options.html?bbl" target="_blank" class="SL_options" title="Mostrar opções">Opções</a> : <a href="chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/html/options/options.html?hist" target="_blank" class="SL_options" title="Histórico de tradução">Histórico</a> : <a href="chrome-extension://noaijdpnepcgjemiklgfkcfbkokogabh/content/html/options/options.html?feed" target="_blank" class="SL_options" title="Comentários">Comentários</a> : <a href="https://imtranslator.net/extensions/?tp=chr-ImTranslator&amp;a=0" target="_blank" class="SL_options" title="Faça sua contribuição">Donate</a></td><td class="SL_td" width="15%" align="right"><span id="SL_Balloon_Close" class="SL_options" title="Encerrar">Encerrar</span></td></tr></table></div></div></div><iframe style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; border: none; z-index: 2147483647;" src="./Inspired in Netflix_files/saved_resource.html"></iframe></body></html>

@@ -1,11 +1,13 @@
 .navbar {
   display: flex;
-  background-color: #000;
+  background-color: transparent;
   position: fixed;
   width: 100%;
+  transition-timing-function: ease-in;
+  transition: all 1s;
 
   &.black {
-    background-color: #999;
+    background-color: #000;
   }
 
   &__list {

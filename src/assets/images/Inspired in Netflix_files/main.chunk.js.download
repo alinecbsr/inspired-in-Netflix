@@ -1,0 +1,785 @@
+(this["webpackJsonpinspired-in-netflix"] = this["webpackJsonpinspired-in-netflix"] || []).push([["main"],{
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/assets/sass/style.scss":
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-5-1!./node_modules/postcss-loader/src??postcss!./node_modules/resolve-url-loader??ref--6-oneOf-5-3!./node_modules/sass-loader/dist/cjs.js??ref--6-oneOf-5-4!./src/assets/sass/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../images/movie.jpg */ "./src/assets/images/movie.jpg");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
+// Module
+exports.push([module.i, "/* GLOBAL RESET */\nhtml,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\na,\nabbr,\nacronym,\naddress,\nbig,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\ns,\nsamp,\nsmall,\nstrike,\nstrong,\nsub,\nsup,\ntt,\nvar,\nb,\nu,\ni,\ncenter,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nembed,\nfigure,\nfigcaption,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\noutput,\nruby,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol,\nul {\n  list-style: none; }\n\nblockquote,\nq {\n  quotes: none; }\n\nblockquote,\nq {\n  quotes: none; }\n  blockquote:before, blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nhtml {\n  font-size: 62.5%; }\n  @media only screen and (max-width: 74em) {\n    html {\n      font-size: 50%; } }\n\n.container {\n  display: grid;\n  grid-template-rows: min-content min-content min-content min-content;\n  grid-template-columns: 4% repeat(5, 1fr) 4%; }\n\n.navbar {\n  display: flex;\n  background-color: transparent;\n  position: fixed;\n  width: 100%;\n  transition-timing-function: ease-in;\n  transition: all 1s; }\n  .navbar.black {\n    background-color: #000; }\n  .navbar__list {\n    display: flex;\n    align-items: center;\n    background-color: transparent;\n    margin-left: 3.8rem;\n    height: 6.7rem;\n    font-family: \"Netflix Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif; }\n    @media only screen and (max-width: 37.5em) {\n      .navbar__list {\n        margin-left: 1rem; } }\n    .navbar__list a:first-child {\n      padding-left: 0.2%;\n      color: red;\n      font-size: 4rem; }\n    .navbar__list--gift {\n      cursor: pointer;\n      height: 2.2rem;\n      fill: red;\n      width: 2.2rem;\n      padding-right: 2.5rem; }\n      @media only screen and (max-width: 37.5em) {\n        .navbar__list--gift {\n          display: none; } }\n    .navbar__list--bell {\n      cursor: pointer;\n      height: 2.2rem;\n      fill: red;\n      width: 2.2rem;\n      padding-right: 2.5rem; }\n      @media only screen and (max-width: 37.5em) {\n        .navbar__list--bell {\n          display: none; } }\n    .navbar__list--logo {\n      margin-top: 1rem;\n      height: 5rem;\n      padding-right: 1rem; }\n      @media only screen and (max-width: 74em) {\n        .navbar__list--logo {\n          padding-right: 0.1rem; } }\n    .navbar__list-link {\n      font-weight: 500;\n      font-size: 1.5rem;\n      color: #fff;\n      text-decoration: none;\n      margin-right: 2rem;\n      transition: all 0.2s; }\n      .navbar__list-link:last-child {\n        padding-right: 2.6rem; }\n      .navbar__list-link:hover {\n        color: #a7a7a7; }\n    .navbar__list--left {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      flex-grow: 1;\n      padding-right: 2rem; }\n      .navbar__list--left__input {\n        font-size: 1.4rem;\n        border: none;\n        color: #fff;\n        outline: none;\n        width: 0px;\n        padding: 10px;\n        padding-right: 2rem;\n        background: #000;\n        border: 1px solid #fff;\n        transition: width 0.5s;\n        cursor: pointer;\n        opacity: 0; }\n        .navbar__list--left__input:focus {\n          padding-left: 4rem;\n          width: 22rem;\n          cursor: text;\n          opacity: 1; }\n\n.research {\n  width: 1.8rem;\n  height: 1.8rem;\n  transform: translateX(2.4rem) translateY(1rem);\n  cursor: pointer;\n  margin: 0 0 2rem 0; }\n\n.pseudo-link {\n  cursor: pointer; }\n  @media only screen and (max-width: 74em) {\n    .pseudo-link {\n      display: none; } }\n\n.header {\n  background-color: #000;\n  grid-column: 1 / 13;\n  height: 65rem;\n  display: inline-block;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-size: cover;\n  background-position: top center;\n  background-repeat: no-repeat; }\n  @media only screen and (max-width: 37.5em) {\n    .header {\n      height: 50rem; } }\n  .header__container {\n    padding-top: 27rem;\n    padding-left: 8rem;\n    color: #fff; }\n    @media only screen and (max-width: 37.5em) {\n      .header__container {\n        padding-left: 1rem; } }\n    .header__container-heading {\n      font-size: 6rem;\n      padding-bottom: 1rem; }\n    .header__container-btnPlay, .header__container-btnMyList {\n      cursor: pointer;\n      font-size: 1.6rem;\n      color: #fff;\n      outline: none;\n      border: none;\n      font-weight: 700;\n      border-radius: 0.2vw;\n      padding-left: 3.5rem;\n      padding-right: 3.5rem;\n      margin-right: 1rem;\n      padding-top: 1rem;\n      background-color: rgba(51, 51, 51, 0.5);\n      padding-bottom: 1rem; }\n      .header__container-btnPlay-add, .header__container-btnMyList-add {\n        width: 15px;\n        height: 15px;\n        fill: #fff;\n        margin-right: 1rem; }\n      .header__container-btnPlay-play, .header__container-btnMyList-play {\n        width: 15px;\n        height: 15px;\n        fill: #fff;\n        margin-right: 1rem; }\n      .header__container-btnPlay:hover, .header__container-btnMyList:hover {\n        color: #000;\n        background-color: #e6e6e6;\n        transition: all 0.2s;\n        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }\n        .header__container-btnPlay:hover > *, .header__container-btnMyList:hover > * {\n          fill: #000; }\n    .header__container-overview {\n      width: 45rem;\n      line-height: 1.3;\n      padding-top: 2.5rem;\n      font-size: 1.8rem; }\n      @media only screen and (max-width: 37.5em) {\n        .header__container-overview {\n          width: 36rem; } }\n  .header--fadeBottom {\n    height: 28.5rem;\n    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111111); }\n\n.movieList {\n  background-color: #000;\n  grid-column: 2 / 13;\n  color: #fff; }\n  .movieList__heading {\n    padding-top: 2rem;\n    display: block;\n    font-size: 2em;\n    margin-block-start: 0.67em;\n    margin-block-end: 0.67em;\n    margin-inline-start: 0px;\n    margin-inline-end: 0px;\n    font-weight: bold;\n    font-family: \"Hind\", sans-serif; }\n  .movieList__container::-webkit-scrollbar {\n    display: none; }\n  .movieList__container {\n    transition: transform 450ms;\n    overflow: -moz-hidden-unscrollable;\n    overflow-x: scroll;\n    display: flex;\n    width: 95vw;\n    overflow: -moz-scrollbars-horizontal;\n    grid-template-columns: repeat(20, 1fr);\n    grid-column-gap: 0;\n    column-gap: 0; }\n    @media only screen and (max-width: 37.5em) {\n      .movieList__container {\n        width: 98vw; } }\n    .movieList__container:hover .movieList__container--movie {\n      opacity: 0.3; }\n      .movieList__container:hover .movieList__container--movie:hover {\n        transform: scale(1.5);\n        opacity: 1; }\n    .movieList__container:hover > * {\n      transform: translate3d(-6rem, 0, 0); }\n      @media only screen and (max-width: 74em) {\n        .movieList__container:hover > * {\n          transform: translate3d(-5rem, 0, 0); } }\n      @media only screen and (max-width: 37.5em) {\n        .movieList__container:hover > * {\n          transform: translate3d(-3rem, 0, 0); } }\n    .movieList__container--movie-image:hover ~ .movieList__container--movie-image {\n      transform: translate3d(6rem, 0, 0); }\n      @media only screen and (max-width: 74em) {\n        .movieList__container--movie-image:hover ~ .movieList__container--movie-image {\n          transform: translate3d(4.5rem, 0, 0); } }\n      @media only screen and (max-width: 37.5em) {\n        .movieList__container--movie-image:hover ~ .movieList__container--movie-image {\n          transform: translate3d(2.8rem, 0, 0); } }\n    .movieList__container:hover > .movieList__container--movie-image {\n      transform: translate3d(-1rem, 0, 0); }\n    .movieList__container--movie-image:hover ~ .movieList__container--movie-image {\n      transform: translate3d(1rem, 0, 0); }\n    .movieList__container:hover .movieList__container--movie-image {\n      opacity: 0.3; }\n      .movieList__container:hover .movieList__container--movie-image:hover {\n        transform: scale(1.1);\n        opacity: 1; }\n    .movieList__container--movie-image {\n      cursor: pointer;\n      transition: all 450ms;\n      transform: center left;\n      padding-top: 3.5rem;\n      padding-bottom: 4rem;\n      height: 21.5rem;\n      min-height: 0; }\n      @media only screen and (max-width: 74em) {\n        .movieList__container--movie-image {\n          height: 18.5rem; } }\n      @media only screen and (max-width: 37.5em) {\n        .movieList__container--movie-image {\n          height: 14rem; } }\n      .movieList__container--movie-image:not(:last-child) {\n        padding-right: 0.5rem; }\n      .movieList__container--movie-image-image {\n        height: 100%;\n        margin: 0;\n        border: 0;\n        font-size: 100%;\n        font: inherit;\n        vertical-align: baseline;\n        padding-top: 3rem;\n        padding-bottom: 4rem;\n        padding-right: 1rem;\n        transition: all 450ms;\n        min-height: 0;\n        height: 52rem;\n        cursor: pointer;\n        transition: all 450ms;\n        transform: center left; }\n      .movieList__container--movie-image__netflix {\n        min-height: 0;\n        padding-top: 3rem;\n        padding-bottom: 4rem;\n        padding-right: 1rem;\n        height: 52rem;\n        cursor: pointer;\n        transition: all 450ms;\n        transform: center left;\n        transition: transform 450ms;\n        overflow: -moz-hidden-unscrollable;\n        overflow-x: scroll;\n        display: flex;\n        width: 95vw;\n        overflow: -moz-scrollbars-horizontal;\n        grid-template-columns: repeat(20, 1fr);\n        grid-column-gap: 0;\n        column-gap: 0; }\n        @media only screen and (max-width: 74em) {\n          .movieList__container--movie-image__netflix {\n            height: 42rem; } }\n        @media only screen and (max-width: 37.5em) {\n          .movieList__container--movie-image__netflix {\n            height: 34rem; } }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/NavBar */ "./src/components/NavBar.js");
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./routes */ "./src/routes.js");
+var _jsxFileName = "C:\\Users\\aline.de.c.rosa\\Documents\\studying\\inspired-in-netflix\\src\\App.js";
+
+
+
+
+class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_routes__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10
+      },
+      __self: this
+    }));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/assets/images/NetflixLogoRGB.png":
+/*!**********************************************!*\
+  !*** ./src/assets/images/NetflixLogoRGB.png ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/NetflixLogoRGB.8562b656.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/add.svg":
+/*!***********************************!*\
+  !*** ./src/assets/images/add.svg ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/add.b1e00d66.svg";
+
+/***/ }),
+
+/***/ "./src/assets/images/belll.svg":
+/*!*************************************!*\
+  !*** ./src/assets/images/belll.svg ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/belll.934ba087.svg";
+
+/***/ }),
+
+/***/ "./src/assets/images/gift.svg":
+/*!************************************!*\
+  !*** ./src/assets/images/gift.svg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/gift.168e585f.svg";
+
+/***/ }),
+
+/***/ "./src/assets/images/movie.jpg":
+/*!*************************************!*\
+  !*** ./src/assets/images/movie.jpg ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/movie.8ff958ae.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/playButton.svg":
+/*!******************************************!*\
+  !*** ./src/assets/images/playButton.svg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/playButton.c65f6a86.svg";
+
+/***/ }),
+
+/***/ "./src/assets/images/research.svg":
+/*!****************************************!*\
+  !*** ./src/assets/images/research.svg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/research.19835778.svg";
+
+/***/ }),
+
+/***/ "./src/assets/sass/style.scss":
+/*!************************************!*\
+  !*** ./src/assets/sass/style.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-5-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--6-oneOf-5-3!../../../node_modules/sass-loader/dist/cjs.js??ref--6-oneOf-5-4!./style.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/assets/sass/style.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-5-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--6-oneOf-5-3!../../../node_modules/sass-loader/dist/cjs.js??ref--6-oneOf-5-4!./style.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/assets/sass/style.scss", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-5-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/resolve-url-loader??ref--6-oneOf-5-3!../../../node_modules/sass-loader/dist/cjs.js??ref--6-oneOf-5-4!./style.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/assets/sass/style.scss");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/Header.js":
+/*!**********************************!*\
+  !*** ./src/components/Header.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Header; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assets_images_playButton_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/images/playButton.svg */ "./src/assets/images/playButton.svg");
+/* harmony import */ var _assets_images_playButton_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_images_playButton_svg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_images_add_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/images/add.svg */ "./src/assets/images/add.svg");
+/* harmony import */ var _assets_images_add_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_add_svg__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\aline.de.c.rosa\\Documents\\studying\\inspired-in-netflix\\src\\components\\Header.js";
+
+
+
+/* import Witcher from "../assets/images/witcher.jpg"; */
+
+function Header() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
+    className: "header",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "header__container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "header__container-heading",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, "T\xEDtulo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "header__container-btnPlay",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_playButton_svg__WEBPACK_IMPORTED_MODULE_1___default.a,
+    className: "header__container-btnMyList-play",
+    alt: "Play",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }), "Play"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "header__container-btnMyList",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_add_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    className: "header__container-btnMyList-add",
+    alt: "Add",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }), "My List"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "header__container-overview",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, "Overview Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis posuere urna, id consequat ante. Cras venenatis erat sem, a tempus neque fermentum mattis.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "header--fadeBottom",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./src/components/NavBar.js":
+/*!**********************************!*\
+  !*** ./src/components/NavBar.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_NavbarItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/NavbarItem */ "./src/components/NavbarItem.js");
+/* harmony import */ var _assets_images_NetflixLogoRGB_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/images/NetflixLogoRGB.png */ "./src/assets/images/NetflixLogoRGB.png");
+/* harmony import */ var _assets_images_NetflixLogoRGB_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_NetflixLogoRGB_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_images_research_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/images/research.svg */ "./src/assets/images/research.svg");
+/* harmony import */ var _assets_images_research_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_research_svg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _assets_images_gift_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/images/gift.svg */ "./src/assets/images/gift.svg");
+/* harmony import */ var _assets_images_gift_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_gift_svg__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_images_belll_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/images/belll.svg */ "./src/assets/images/belll.svg");
+/* harmony import */ var _assets_images_belll_svg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_images_belll_svg__WEBPACK_IMPORTED_MODULE_5__);
+var _jsxFileName = "C:\\Users\\aline.de.c.rosa\\Documents\\studying\\inspired-in-netflix\\src\\components\\NavBar.js";
+
+
+
+
+
+
+
+class NavBar extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(...args) {
+    super(...args);
+    this.state = {
+      scrolling: false
+    };
+
+    this.handleScroll = event => {
+      if (window.scrollY === 0) {
+        this.setState({
+          scrolling: false
+        });
+      } else if (window.scrollY > 20) {
+        this.setState({
+          scrolling: true
+        });
+      }
+    };
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  render() {
+    const {
+      scrolling
+    } = this.state;
+    const {
+      showMovies
+    } = this.props;
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+      className: "navbar" + (scrolling ? "black" : ""),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      className: "navbar__list",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NavbarItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      link: "/",
+      exact: true,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      className: "navbar__list--logo",
+      src: _assets_images_NetflixLogoRGB_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+      alt: "NetflixLogo",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "navbar__list-link pseudo-link",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43
+      },
+      __self: this
+    }, "Home"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "navbar__list-link pseudo-link",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44
+      },
+      __self: this
+    }, "TV Shows"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "navbar__list-link pseudo-link",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45
+      },
+      __self: this
+    }, "Movies"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "navbar__list-link pseudo-link",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46
+      },
+      __self: this
+    }, "Recently Added"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "navbar__list-link pseudo-link",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47
+      },
+      __self: this
+    }, "My List")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "navbar__list--left",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: _assets_images_research_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
+      className: "research",
+      alt: "research",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 50
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      onChange: showMovies,
+      className: "navbar__list--left__input",
+      type: "text",
+      placeholder: "Title, genres, people",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      className: "navbar__list",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "navbar__list-link pseudo-link",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 58
+      },
+      __self: this
+    }, "KIDS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "navbar__list-link pseudo-link",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59
+      },
+      __self: this
+    }, "DVD")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      className: "navbar__list--gift",
+      src: _assets_images_gift_svg__WEBPACK_IMPORTED_MODULE_4___default.a,
+      alt: "Gift",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 61
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      className: "navbar__list--bell",
+      src: _assets_images_belll_svg__WEBPACK_IMPORTED_MODULE_5___default.a,
+      alt: "Bell",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 62
+      },
+      __self: this
+    })));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (NavBar);
+
+/***/ }),
+
+/***/ "./src/components/NavbarItem.js":
+/*!**************************************!*\
+  !*** ./src/components/NavbarItem.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+var _jsxFileName = "C:\\Users\\aline.de.c.rosa\\Documents\\studying\\inspired-in-netflix\\src\\components\\NavbarItem.js";
+
+
+
+const NavbarItem = props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+  className: "navbar__list--link",
+  exact: props.exact,
+  to: props.link,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: undefined
+}, props.children);
+
+/* harmony default export */ __webpack_exports__["default"] = (NavbarItem);
+
+/***/ }),
+
+/***/ "./src/components/NetflixOriginals.js":
+/*!********************************************!*\
+  !*** ./src/components/NetflixOriginals.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _services_movies__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/movies */ "./src/services/movies.js");
+var _jsxFileName = "C:\\Users\\aline.de.c.rosa\\Documents\\studying\\inspired-in-netflix\\src\\components\\NetflixOriginals.js";
+
+
+
+class NetflixOriginals extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(...args) {
+    super(...args);
+    this.state = {
+      movies: [],
+      stateHandle: null
+    };
+
+    this.fuctionTest = params => {
+      console.log(params);
+      this.setState({
+        stateHandle: "hahaha"
+      });
+    };
+  }
+
+  async componentDidMount() {
+    const API_KEY = "ab84133dc7803f14df71b1679b4e5515";
+    const response = await _services_movies__WEBPACK_IMPORTED_MODULE_1__["default"].get(`/discover/tv?api_key=${API_KEY}&with_networks=213`);
+    this.setState({
+      movies: response.data.results
+    });
+  }
+
+  render() {
+    const {
+      movies
+    } = this.state;
+    const pathUrl = "https://image.tmdb.org/t/p/original/";
+    console.log(movies);
+    if (this.state.stateHandle) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, "Hello world");
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      className: "movieList__heading",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: this
+    }, "NETFLIX ORIGINALS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "movieList__container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, movies.map(movie => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      key: movie.id,
+      className: "movieList__container--movie-image",
+      src: `${pathUrl}${movie.poster_path}`,
+      alt: "",
+      onClick: () => this.fuctionTest(movie),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (NetflixOriginals);
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App */ "./src/App.js");
+/* harmony import */ var _assets_sass_style_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/sass/style.scss */ "./src/assets/sass/style.scss");
+/* harmony import */ var _assets_sass_style_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_sass_style_scss__WEBPACK_IMPORTED_MODULE_4__);
+var _jsxFileName = "C:\\Users\\aline.de.c.rosa\\Documents\\studying\\inspired-in-netflix\\src\\index.js";
+
+
+
+
+
+const app = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}));
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(app, document.getElementById("app"));
+
+/***/ }),
+
+/***/ "./src/pages/MainContent.js":
+/*!**********************************!*\
+  !*** ./src/pages/MainContent.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MainContent; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Header */ "./src/components/Header.js");
+/* harmony import */ var _components_NetflixOriginals__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/NetflixOriginals */ "./src/components/NetflixOriginals.js");
+var _jsxFileName = "C:\\Users\\aline.de.c.rosa\\Documents\\studying\\inspired-in-netflix\\src\\pages\\MainContent.js";
+
+
+
+class MainContent extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "movieList",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NetflixOriginals__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    })));
+  }
+
+}
+
+/***/ }),
+
+/***/ "./src/routes.js":
+/*!***********************!*\
+  !*** ./src/routes.js ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _pages_MainContent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/MainContent */ "./src/pages/MainContent.js");
+var _jsxFileName = "C:\\Users\\aline.de.c.rosa\\Documents\\studying\\inspired-in-netflix\\src\\routes.js";
+
+
+
+
+const Routes = () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  exact: true,
+  path: "/",
+  component: _pages_MainContent__WEBPACK_IMPORTED_MODULE_2__["default"],
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+})));
+
+/* harmony default export */ __webpack_exports__["default"] = (Routes);
+
+/***/ }),
+
+/***/ "./src/services/movies.js":
+/*!********************************!*\
+  !*** ./src/services/movies.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+
+const instance = axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
+  baseURL: "https://api.themoviedb.org/3"
+});
+/* harmony default export */ __webpack_exports__["default"] = (instance);
+
+/***/ }),
+
+/***/ 1:
+/*!**************************************************************************************************************!*\
+  !*** multi (webpack)/hot/dev-server.js ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.js ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\aline.de.c.rosa\Documents\studying\inspired-in-netflix\node_modules\webpack\hot\dev-server.js */"./node_modules/webpack/hot/dev-server.js");
+__webpack_require__(/*! C:\Users\aline.de.c.rosa\Documents\studying\inspired-in-netflix\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\Users\aline.de.c.rosa\Documents\studying\inspired-in-netflix\src\index.js */"./src/index.js");
+
+
+/***/ })
+
+},[[1,"runtime-main",1]]]);
+//# sourceMappingURL=main.chunk.js.map

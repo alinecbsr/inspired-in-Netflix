@@ -6,10 +6,12 @@ import NetflixOriginals from "../components/NetflixOriginals";
 export default class MainContent extends Component {
   render() {
     return (
-      <>
+      <div className="container">
         <Header />
-        <NetflixOriginals />
-      </>
+        <div className="movieList">
+          <NetflixOriginals />
+        </div>
+      </div>
     );
   }
 }

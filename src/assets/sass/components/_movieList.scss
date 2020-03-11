@@ -5,6 +5,14 @@
 
   &__heading {
     padding-top: 2rem;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: "Hind", sans-serif;
   }
 
   &__container::-webkit-scrollbar {
@@ -12,7 +20,6 @@
   }
 
   &__container {
-    scrollbar-width: none;
     transition: transform 450ms;
     overflow: -moz-hidden-unscrollable;
     overflow-x: scroll;
@@ -47,7 +54,7 @@
       }
     }
 
-    &--movie:hover ~ &--movie {
+    &--movie-image:hover ~ &--movie-image {
       transform: translate3d(6rem, 0, 0);
 
       @include responsive(tab_port) {
@@ -59,15 +66,15 @@
       }
     }
 
-    &:hover > &--movie__netflix {
+    &:hover > &--movie-image {
       transform: translate3d(-1rem, 0, 0);
     }
 
-    &--movie__netflix:hover ~ &--movie__netflix {
+    &--movie-image:hover ~ &--movie-image {
       transform: translate3d(1rem, 0, 0);
     }
 
-    &:hover &--movie__netflix {
+    &:hover &--movie-image {
       opacity: 0.3;
 
       &:hover {
@@ -76,7 +83,7 @@
       }
     }
 
-    &--movie {
+    &--movie-image {
       cursor: pointer;
       transition: all 450ms;
       transform: center left;
@@ -99,6 +106,20 @@
 
       &-image {
         height: 100%;
+        margin: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        padding-right: 1rem;
+        transition: all 450ms;
+        min-height: 0;
+        height: 52rem;
+        cursor: pointer;
+        transition: all 450ms;
+        transform: center left;
       }
 
       &__netflix {
@@ -110,6 +131,14 @@
         cursor: pointer;
         transition: all 450ms;
         transform: center left;
+        transition: transform 450ms;
+        overflow: -moz-hidden-unscrollable;
+        overflow-x: scroll;
+        display: flex;
+        width: 95vw;
+        overflow: -moz-scrollbars-horizontal;
+        grid-template-columns: repeat(20, 1fr);
+        column-gap: 0;
 
         @include responsive(tab_port) {
           height: 42rem;

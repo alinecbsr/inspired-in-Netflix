@@ -142,3 +142,9 @@ html {
     font-size: 50%;
   }
 }
+
+.container {
+  display: grid;
+  grid-template-rows: min-content min-content min-content min-content;
+  grid-template-columns: 4% repeat(5, 1fr) 4%;
+}
