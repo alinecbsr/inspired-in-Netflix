@@ -1,0 +1,91 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/components/NetflixOriginals.js":
+/*!********************************************!*\
+  !*** ./src/components/NetflixOriginals.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _services_movies__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/movies */ "./src/services/movies.js");
+var _jsxFileName = "C:\\Users\\aline.de.c.rosa\\Documents\\studying\\inspired-in-netflix\\src\\components\\NetflixOriginals.js";
+
+
+
+class NetflixOriginals extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(...args) {
+    super(...args);
+    this.state = {
+      movies: [],
+      stateHandle: null
+    };
+
+    this.fuctionTest = params => {
+      console.log(params);
+      this.setState({
+        stateHandle: "hahaha"
+      });
+    };
+  }
+
+  async componentDidMount() {
+    const API_KEY = "ab84133dc7803f14df71b1679b4e5515";
+    const response = await _services_movies__WEBPACK_IMPORTED_MODULE_1__["default"].get(`/discover/tv?api_key=${API_KEY}&with_networks=213`);
+    this.setState({
+      movies: response.data.results
+    });
+  }
+
+  render() {
+    const {
+      movies
+    } = this.state;
+    const pathUrl = "https://image.tmdb.org/t/p/original/";
+    console.log(movies);
+    if (this.state.stateHandle) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, "Hello world");
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      className: "movieList__heading",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: this
+    }, "NETFLIX ORIGINALS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "movieList__container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, movies.map(movie => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      key: movie.id,
+      className: "movieList__container--movie-image",
+      src: `${pathUrl}${movie.poster_path}`,
+      alt: "",
+      onClick: () => this.fuctionTest(movie),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (NetflixOriginals);
+
+/***/ })
+
+})
+//# sourceMappingURL=main.994faaee86ef1e6827a0.hot-update.js.map
