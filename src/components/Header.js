@@ -64,13 +64,4 @@ class Header extends Component {
   }
 }
 
-/* Header.propTypes = {
-  poster: PropTypes.arrayOf(
-    PropTypes.shape({
-      original_name: PropTypes.string,
-      overview: PropTypes.string
-    })
-  ).isRequired
-}; */
-
 export default Header;
