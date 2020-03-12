@@ -4,9 +4,6 @@
   height: 65rem;
   display: inline-block;
   background-image: url("../../images/movie.jpg");
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
 
   @include responsive(phone) {
     height: 50rem;

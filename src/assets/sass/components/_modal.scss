@@ -1,0 +1,93 @@
+.movie {
+  display: contents;
+  justify-content: center;
+  width: 30rem;
+  top: 0;
+  left: 0;
+  color: #fff;
+  height: 52rem;
+  opacity: 0;
+  box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+  padding: 30rem 0 0 20rem;
+
+  @include responsive(tab_port) {
+    height: 38rem;
+  }
+  @include responsive(phone) {
+    height: 50rem;
+  }
+
+  &__container {
+    background: linear-gradient(90deg, #000 50%, transparent);
+    width: 90%;
+    padding: 30rem 15rem;
+    height: 100%;
+    padding-left: 15rem;
+
+    @include responsive(tab_port) {
+      background: linear-gradient(
+        90deg,
+        rgb(0, 0, 0) 55%,
+        rgba(0, 0, 0, 0.733),
+        transparent
+      );
+      width: 88%;
+    }
+
+    @include responsive(tab_medium) {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.966) 65%, transparent);
+      width: 100%;
+    }
+
+    @include responsive(phone) {
+      padding-top: 1rem;
+      padding-left: 1rem;
+    }
+  }
+
+  &__title {
+    font-size: 4rem;
+  }
+
+  &__rating {
+    font-size: 2rem;
+    color: #1cb831;
+  }
+
+  &__release {
+    padding-top: 1.6rem;
+    font-size: 2rem;
+    color: #fff;
+
+    @include responsive(phone) {
+      padding-top: 1.2rem;
+    }
+  }
+
+  &__overview {
+    color: rgb(122, 122, 122);
+    padding-top: 2rem;
+    font-size: 2rem;
+    hyphens: auto;
+    width: 60%;
+    line-height: 1.2;
+
+    @include responsive(lg_desktop) {
+      width: 60%;
+      font-size: 1.8rem;
+    }
+
+    @include responsive(tab_port) {
+      width: 80%;
+    }
+
+    @include responsive(tab_medium) {
+      width: 95%;
+      color: rgba(255, 255, 255, 0.877);
+    }
+    @include responsive(phone) {
+      padding-top: 1rem;
+      font-size: 1.7rem;
+    }
+  }
+}
